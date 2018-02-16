@@ -1,33 +1,132 @@
-header h1{
-	text-align: center; 
+@font-face {
+   font-family: "Pokemon Classic", sans-serif; 
+   font-style: normal;
+   font-weight: normal;
+   src: url(Pokemon Classic.ttf);
 }
-
+body{
+	background-color: #010101;
+	height: 100vh; 
+}
+.imagexs{
+	transform: rotate(-20deg);
+	margin-top: 200px; 
+}
+header h1{
+	height: 80px; 
+}
 form{
 	display: flex; 
 	justify-content: center;
+	height: 100px; 	
 }
-.fab{
-	display: inline-block;
-	font-size: 20px;
-}
+
 input{
 	height: 30px; 
 	width: 350px; 
 	border-style: solid; 
 	border-top: none; 
 	border-left: none; 
-	border-right: none; 
+	border-right: none;
+	background-color: transparent;
+	margin-top: 40px; 
+}
+input:focus{
+	outline: none;
+	color: #FFCB05;  
+}
+input::placeholder{
+	color: #316DB5;
+	font-family: "Pokemon Classic"; 
+	font-size: 16px; 
+}
+.btn-ball{
+	width: 80px;
+	height: 80px; 
+	margin-bottom: -10px;
 }
 
-.contenedor{
-	margin-top: 50px; 
+/*MODAL*/
+
+.modal-body{
+	display: flex; 
+	flex-wrap: wrap;
 }
-.caja-pokemon{
-	height: 220px;
-	border: 1px solid black;
-	border-radius: 3px; 
+.caracteristicas{
+	height: 80px;
+	width: 40%; 
+	margin-right: 20px;
+	border: 1px solid #000;
+	margin-bottom: 20px; 
 }
-img{
-	height: inherit;
-	width: inherit;
+
+.imagen-pokemon{
+	height: 100px; 
+	width: 100px; 
+}
+
+.modal-title{
+	color: #000;
+}
+/**/
+body {
+  background: #000;
+}
+.preloader-2 {
+  margin: 10px auto 0;
+}
+
+div {
+  margin: 5px 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+
+.preloader-2 .line {
+  width: 1px;
+  height: 12px;
+  background: #000;
+  margin: 0 1px;
+  display: inline-block;
+  animation: opacity-2 1000ms infinite ease-in-out;
+}
+
+.preloader-2 .line-1 { animation-delay: 800ms; }
+.preloader-2 .line-2 { animation-delay: 600ms; }
+.preloader-2 .line-3 { animation-delay: 400ms; }
+.preloader-2 .line-4 { animation-delay: 200ms; }
+.preloader-2 .line-6 { animation-delay: 200ms; }
+.preloader-2 .line-7 { animation-delay: 400ms; }
+.preloader-2 .line-8 { animation-delay: 600ms; }
+.preloader-2 .line-9 { animation-delay: 800ms; }
+
+@keyframes opacity-1 { 
+  0% { 
+    opacity: 1;
+  }
+  50% { 
+    opacity: 0;
+  }
+  100% { 
+    opacity: 1;
+  }  
+}
+
+@keyframes opacity-2 { 
+  0% { 
+    opacity: 1;
+    height: 15px;
+  }
+  50% { 
+    opacity: 0;
+    height: 12px;
+  }
+  100% { 
+    opacity: 1;
+    height: 15px;
+  }  
 }

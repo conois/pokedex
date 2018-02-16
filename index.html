@@ -3,34 +3,87 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>Pokedex</title>
+	<title>Super Pokedex</title>
+	<link rel="shortcut icon" type="text/css" href="img/favicon.png">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<header>
-		<h1>Pokedex</h1>
+		<img src="img/Logo_de_Pokémon_(EN).png" class="col-lg-12 hidden-xs">
+
+		<img src="img/Logo_de_Pokémon_(EN).png" class="col-xs-12 col-sm-12 hidden-lg imagexs">
+
+
+	<form class="col-lg-12 col-xs-offset-4 col-lg-offset-0">
+		<input id='search' type="text" name="search-pokemon" placeholder="search you favorite pokemon ! Ej: bulbasaur =>">
+		<img src="img/Pokeball.png"  alt="boton pokebola" class="btn btn-ball" data-toggle="modal" data-target="#poke-modal">
+	</form>
+
 	</header>
 
-	<form>
-		<input id='search' type="text" name="search-pokemon" placeholder="search">
-	</form>
 
 
 	<section>
 		<div class="container">
-			<div class="row contenedor">
-				
+			<div class="row">
+				<div id="gifgif" class="col-lg-5"></div>
+				<div id="pokelogo" class="col-lg-4"></div>					
 			</div>
 		</div>
 	</section>
 
+<div id="poke-modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Pokedex</h4>
+	        <div class="preloader-2">
+					  <span class="line line-1"></span>
+					  <span class="line line-2"></span>
+					  <span class="line line-3"></span>
+					  <span class="line line-4"></span>
+					  <span class="line line-5"></span>
+					  <span class="line line-6"></span>
+					  <span class="line line-7"></span>
+					  <span class="line line-8"></span>
+					  <span class="line line-9"></span>
+					  </div>
+	      </div>
+      <div class=" modal-body">
+      	<img id="imagen-pokemon" src="" alt= "">
+      	<div>
+      		<p id="name"></p>
+      		<p id="evolution"></p>
+      	</div>
+      	<div>
+      		<p id="heigth"></p>
+      		<p id="weigth"></p>
+      		<p id="ability"></p>
+      	</div>
+      	<div>
+      		<p id="description"></p>
+      	</div>      		
+      </div>
+        
+    </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/app.js"></script>	
 </body>
 </html>
