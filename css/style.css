@@ -1,0 +1,33 @@
+header h1{
+	text-align: center; 
+}
+
+form{
+	display: flex; 
+	justify-content: center;
+}
+.fab{
+	display: inline-block;
+	font-size: 20px;
+}
+input{
+	height: 30px; 
+	width: 350px; 
+	border-style: solid; 
+	border-top: none; 
+	border-left: none; 
+	border-right: none; 
+}
+
+.contenedor{
+	margin-top: 50px; 
+}
+.caja-pokemon{
+	height: 220px;
+	border: 1px solid black;
+	border-radius: 3px; 
+}
+img{
+	height: inherit;
+	width: inherit;
+}
